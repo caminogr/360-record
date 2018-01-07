@@ -291,6 +291,14 @@ d@1:
   dependencies:
     es5-ext "^0.10.9"
 
+datauri@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/datauri/-/datauri-1.0.5.tgz#d0975d1ab6c8f2e0ce3ca43baa4539be12d289a0"
+  dependencies:
+    image-size "^0.3.5"
+    mimer "^0.2.1"
+    semver "^5.0.3"
+
 debug@2.6.9, debug@^2.6.9, debug@~2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -528,6 +536,10 @@ iconv-lite@0.4.19, iconv-lite@^0.4.18:
   version "0.4.19"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
+image-size@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.3.5.tgz#83240eab2fb5b00b04aab8c74b0471e9cba7ad8c"
+
 inflection@1.12.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.12.0.tgz#a200935656d6f5f6bc4dc7502e1aecb703228416"
@@ -752,6 +764,10 @@ mime-types@~2.1.15, mime-types@~2.1.16:
 mime@1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
+
+mimer@^0.2.1:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/mimer/-/mimer-0.2.3.tgz#8808c0d03fb2b1273b81ae25a6e52e04ce18dce4"
 
 mimic-fn@^1.0.0:
   version "1.1.0"
@@ -1097,7 +1113,7 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.1.0:
+"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.0.3, semver@^5.1.0:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
 
