@@ -20,6 +20,9 @@ gem 'carrierwave'
 gem 'cloudinary'
 gem 'dotenv-rails'
 gem 'rspotify'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-spotify'
 
 group :development, :test do
   gem 'byebug', platform: :mri
