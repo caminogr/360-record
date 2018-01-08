@@ -19,12 +19,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'dotenv-rails'
+gem 'rspotify'
 
 group :development, :test do
   gem 'byebug', platform: :mri
 end
 
 group :development do
+  gem 'pry-rails'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
