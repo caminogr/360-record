@@ -1,7 +1,10 @@
-<%= form_tag "/photos", method: "post", multipart: true do %>
-  <%= file_field :fileupload, :file %>
-  <%= submit_tag 'Send file' %>
+<%= link_to 'Sign in with Spotify', '/auth/spotify' %>
+
+<%= form_for(@photo, html: {:multipart => true}) do |f|%>
+  <%= file_field_tag :photo %>
+  <%= f.submit 'Send file' %>
 <% end %>
+
 <div class="records-list">
   <%= cl_image_tag("jtovuic8pvwwzto8rpb8.jpg", width: 400, height: 400, class: "record") %>
   <%= cl_image_tag("acezogurhqsxh0uxzuh9.jpg", width: 400, height: 400, class: "record") %>

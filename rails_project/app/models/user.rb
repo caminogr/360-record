@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :photos
+
   serialize :omniauth_auth, JSON
 
   def self.find_or_create_from_omniauth(auth_hash)

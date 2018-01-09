@@ -19,7 +19,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'dotenv-rails'
-gem 'rspotify'
+gem 'rspotify', git:    'git://github.com/kaminora/rspotify.git',
+                branch: 'add-method-pause-a-playback'
 gem 'omniauth-oauth2', '~> 1.3.1'
 
 group :development, :test do

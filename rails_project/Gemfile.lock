@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/kaminora/rspotify.git
+  revision: b11dc67ad9736e8ee12c7b1f0efbd35192f2b933
+  branch: add-method-pause-a-playback
+  specs:
+    rspotify (1.25.1)
+      omniauth-oauth2 (~> 1.3.1)
+      rest-client (~> 2.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -161,9 +170,6 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rspotify (1.25.1)
-      omniauth-oauth2 (~> 1.3.1)
-      rest-client (~> 2.0.2)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -226,7 +232,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.0)
   rails (~> 5.0.6)
-  rspotify
+  rspotify!
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
