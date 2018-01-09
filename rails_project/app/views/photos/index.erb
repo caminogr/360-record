@@ -6,7 +6,9 @@
 <% end %>
 
 <div class="records-list">
-  <%= cl_image_tag("jtovuic8pvwwzto8rpb8.jpg", width: 400, height: 400, class: "record") %>
-  <%= cl_image_tag("acezogurhqsxh0uxzuh9.jpg", width: 400, height: 400, class: "record") %>
-  <%= cl_image_tag("sdtz6tqnkg6vs1srnzha.jpg", width: 400, height: 400, class: "record") %>
+  <% @photos.each do |photo| %>
+    <%= cl_image_tag(photo.public_id, width: 400, height: 400, crop: :fill, class: "record") %>
+    <%= button_to "再生", musics_play_path,  method: :put, class: 'play', remote: true %>
+    <%= button_to "停止", musics_pause_path, method: :put, class: 'pause', remote: true  %>
+  <% end %>
 </div>
