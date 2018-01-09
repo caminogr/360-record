@@ -1,14 +1,16 @@
-<%= link_to 'Sign in with Spotify', '/auth/spotify' %>
-
 <%= form_for(@photo, html: {:multipart => true}) do |f|%>
   <%= file_field_tag :photo %>
-  <%= f.submit 'Send file' %>
+  <%= f.submit 'upload', class: 'photo_button' %>
 <% end %>
 
 <div class="records-list">
   <% @photos.each do |photo| %>
-    <%= cl_image_tag(photo.public_id, width: 400, height: 400, crop: :fill, class: "record") %>
-    <%= button_to "再生", musics_play_path,  method: :put, class: 'play', remote: true %>
-    <%= button_to "停止", musics_pause_path, method: :put, class: 'pause', remote: true  %>
+      <div class="record-group" >
+        <%= cl_image_tag(photo.public_id, width: 400, height: 400, crop: :fill, class: "record") %>
+        <div class="playback" >
+          <%= button_to "再生", musics_play_path,  method: :put, class: 'play', remote: true %>
+          <%= button_to "停止", musics_pause_path, method: :put, class: 'pause', remote: true  %>
+        </div>
+      </div>
   <% end %>
 </div>

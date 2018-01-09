@@ -1,8 +1,37 @@
-// Place all the styles related to the photos controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.new_photo {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.photo_button {
+  width: 100px;
+  height: 30px;
+  background-color: antiquewhite;
+}
+
+.records-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record-group {
+  margin-top: 40px;
+}
+
 .record {
   border-radius: 50%;
+}
+
+.button_to {
+  text-align: center;
+}
+
+.playback{
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 .load {

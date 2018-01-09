@@ -8,6 +8,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+    <div class='signin'>
+      <% unless current_user %>
+        <%= link_to 'Sign in', '/auth/spotify' %>
+      <% end %>
+    </div>
+  </header>
   <body>
     <%= yield %>
   </body>
