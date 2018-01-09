@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20180109140333) do
     t.string   "provider"
     t.string   "uid"
     t.string   "name"
-    t.json     "omniauth_auth"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.json     "auth_hash"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

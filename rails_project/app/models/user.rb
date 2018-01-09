@@ -7,8 +7,7 @@ class User < ActiveRecord::Base
       return user
     else
       user = User.new
-      # binding.pry
-      user.omniauth_auth = auth_hash['credentials']
+      user.auth_hash = auth_hash
       user.uid = auth_hash["info"]['id']
       user.provider = auth_hash['provider']
       user.name = auth_hash["info"]["display_name"]

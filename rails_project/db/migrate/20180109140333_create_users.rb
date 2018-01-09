@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :provider
       t.string :uid
       t.string :name
-      t.json   :omniauth_auth
+      t.json   :auth_hash
 
       t.timestamps null: false
     end
