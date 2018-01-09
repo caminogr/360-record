@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
   def index
     @photo = Photo.new
-    @photos = Photo.all
+    @photos = Photo.order("created_at DESC")
   end
   
   def create

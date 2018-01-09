@@ -20,6 +20,6 @@ class MusicsController < ApplicationController
   private
   def set_photos
     @photo = Photo.new
-    @photos = Photo.all
+    @photos = Photo.order("created_at DESC")
   end
 end
