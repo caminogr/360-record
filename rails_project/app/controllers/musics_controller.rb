@@ -4,7 +4,14 @@ class MusicsController < ApplicationController
   def play
     auth_hash = User.find(current_user.id).auth_hash
     spotify_user = RSpotify::User.new(auth_hash)
-    spotify_user.play_track("spotify:track:2xj9i8PbLxCQtN3cYwSZyF")
+    # own_playlist = spotify_user.playlists.sample
+    # own_playlist = RSpotify::Playlist.find(spotify_user.id, "2RGLjgjEFGAjeKVc4rgxpv")
+    # own_track    = own_playlist.tracks.sample
+
+    # artist (utada)
+    artist = RSpotify::Artist.find('4DSxehI0uXFMd7gjfcbt44')
+    own_track = artist.albums.sample.tracks.sample
+    spotify_user.play_track(own_track.uri)
 
     render template: "photos/index"
   end
